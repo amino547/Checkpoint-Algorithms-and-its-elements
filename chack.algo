@@ -1,0 +1,18 @@
+ALGORITHM InsertionSort(tab)
+VAR
+tab:integer
+key:integer
+BEGIN
+    FOR i FROM 0 TO tab.length-1 STEP 1 do:
+        key := tab[i]
+        j := i - 1
+        
+        WHILE j >= 0 AND tab[j] > key DO:
+            tab[j + 1] := array[j]
+            j := j - 1
+        
+        tab[j + 1] := key
+
+    END FOR
+END
+

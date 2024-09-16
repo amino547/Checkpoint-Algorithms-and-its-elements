@@ -1,0 +1,19 @@
+ALGORITHM sentence
+VAR
+    ch:CHAR = " "
+    nb_char : integer := 0
+    nb_word : integer :=0
+    nb_voy : integer :=0
+BEGIN
+    read(ch)
+    WHILE (ch <> " ") DO
+        nb_char := nb_char+1
+        IF (ch =" ")THEN
+          nb_word = nb_word+1
+        END IF
+        IF(ch = " ")THEN
+        nb_voy :=nb_voy+1
+        END IF
+        read(ch)
+    END_WHILE
+END
